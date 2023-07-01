@@ -1,0 +1,198 @@
+@font-face {
+    font-family: 'mortal_kombatmk11';
+    src: url('mortal-kombat-mk11-webfont.woff2') format('woff2'),
+        url('mortal-kombat-mk11-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+html {
+    font-family: 'mortal_kombatmk11';
+    background-color: #ffAD00;
+}
+
+body {
+    padding: 50px 0px 320px;
+    margin: 0;
+}
+
+
+a {
+    text-decoration: none !important
+}
+
+.navbar {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    padding: 15px;
+    flex-direction: row;
+    justify-content: space-evenly;
+    box-shadow: 1px 0 5px #000;
+    background-color: #ffffff05;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(25px);
+}
+
+.personagens {
+    position: relative;
+    display: inline-block;
+}
+
+.personagens li {
+    list-style: none;
+}
+
+.personagens-content {
+    display: none;
+    position: absolute;
+    background-color: #ffffff05;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    padding: 12px 16px;
+    z-index: 99;
+}
+
+.personagens:hover .personagens-content {
+    display: block;
+}
+
+.menu {
+    font-size: 25px;
+    color: #ffAD00
+}
+
+#logo {
+    font-size: 60px;
+    color: #ffAD00;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.logo {
+    margin-right: 50px;
+}
+
+.list {
+    list-style: none;
+    display: flex;
+    gap: 25px;
+}
+
+#toggler,
+.navbar label {
+    display: none;
+}
+
+@media screen and (max-width: 600px) {
+
+    .menu {
+        width: 100%;
+        max-height: 0;
+        overflow: hidden;
+    }
+
+    .men .list {
+        flex-direction: column;
+        align-items: center;
+        padding: 20px;
+    }
+
+    .navbar label {
+        display: inline-flex;
+        align-items: center;
+        cursor: pointer;
+    }
+
+    #toggler:checked~.menu {
+        max-height: 100%;
+        overflow: visible;
+    }
+
+    .conteiner {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .personagens-content {
+        position: absolute;
+        z-index: 99;
+    }
+}
+
+.conteiner {
+
+    margin-top: 75px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.image-container {
+    transition: transform .5s;
+}
+
+.image-container:hover {
+    transform: scale(1.2);
+}
+
+.image-container img {
+    width: 100%;
+}
+
+.texto {
+    float: right;
+    position: relative;
+    width: 700px;
+    color: #ffAD00;
+    background-color: #ffffff05;
+    backdrop-filter: blur(80px);
+    -webkit-backdrop-filter: blur(25px);
+}
+
+.subtitulos {
+    font-size: 20px;
+    text-align: center;
+}
+
+.conteudo {
+    font-size: 20px;
+    padding: 15px;
+}
+
+#fujin {
+    position: fixed;
+    top: 32%;
+    left: 7%;
+}
+
+table td {
+    padding-right: 180px;
+}
+
+.subtitulostabela {
+    font-size: 22px;
+}
+
+.formulario {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+    width: 100%;
+
+}
+
+.formulario div {
+    display: flex;
+    gap: 8px;
+    justify-content: flex-start;
+}
+
+.entrada {
+    width: 200px;
+    height: 20px;
+}

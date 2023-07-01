@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="teste2.css">
+    lin
+    <title>KOMBO.GG</title>
+</head>
+
+<body style="background-image: url(media/bodyfundo.png);background-repeat: repeat;">
+    <script type="text/javascript" src="arquivo.js"></script>
+    <header>
+        <nav class="navbar">
+            <a href="index.html" id="logo">
+                KOMBO.GG
+            </a>
+            <input type="checkbox" id="toggler">
+            <label for="toggler"><i class="ri-menu-line"></i></label>
+            <div class="menu">
+                <ul class="list">
+                    <li>
+                        <div class="personagens">
+                            <span>PERSONAGENS</span>
+                            <div class="personagens-content">
+                                <ul>
+                                    <li><a href="fujin.html">Fujin</a></li>
+                                    <li><a href="joker.html">Joker</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                </ul>
+                </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <div class="conteiner">
+        <form class="formulario" style="color:#ffAD00">
+
+            <h1>PREENCHA OS DADOS</h1>
+
+            <div>
+                <label for="nome">Nome: </label>
+                <input class="entrada" type="text" placeholder="nome" required="required" name="nome" /><br>
+            </div>
+
+            <div>
+                <label for="telefone">Telefone: </label>
+                <input class="entrada" type="tel" placeholder="(XX)XXXXX-XXXX" /><br>
+            </div>
+            <div>
+                <label for="email">Email: </label>
+                <input class="entrada" type="email" placeholder="name@mail.com" name="email" />
+            </div>
+            <div>
+                <label>Data:</label>
+                <input class="entrada" type="date">
+            </div>
+            <div>
+                <label>Usuário: </label>
+                <input class="entrada" type="text" required>
+            </div>
+            <div>
+                <label>Senha: </label>
+                <input class="entrada" type="password" required>
+            </div>
+            <div>
+                <textarea style="width: 500px; height: 110px;"
+                    placeholder="qual personagem você quer pra ser o próximo?!"></textarea>
+            </div>
+            <div align="center">
+                <input type="submit" class="enviar" onclick="Enviar();" value="Obter Kombos" />
+            </div>
+        </form>
+    </div>
+</body>
+<script src="form.js"></script>
+
+</html>
