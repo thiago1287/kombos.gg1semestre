@@ -122,6 +122,11 @@ a {
         position: absolute;
         z-index: 99;
     }
+
+    body {
+        padding: 50px 0px;
+        background-color: #000;
+    }
 }
 
 .conteiner {
@@ -192,7 +197,7 @@ table td {
     justify-content: flex-start;
 }
 
-.entrada {
+.formulario input {
     width: 200px;
     height: 20px;
 }
