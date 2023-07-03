@@ -90,6 +90,10 @@ a {
 
 @media screen and (max-width: 600px) {
 
+    html{
+        background-color: #000;
+    }
+
     .menu {
         width: 100%;
         max-height: 0;
@@ -115,7 +119,31 @@ a {
 
     .conteiner {
         display: flex;
+        width: 100%;
         flex-direction: column;
+        padding: 0;
+    }
+
+    .conteiner li img{
+        width: 80%;
+    }
+
+    .conteiner li{
+        padding-left: 0;
+        margin: 0;
+    }
+
+    .texto{
+        display: block;
+        margin: 0 !important; 
+        box-sizing: content-box;
+        width: 100% !important;
+        padding: 0;
+        float: left;
+    }
+
+    #fujin{
+        width: 0;
     }
 
     .personagens-content {
@@ -126,6 +154,7 @@ a {
     body {
         padding: 50px 0px;
         background-color: #000;
+        width: 100%;
     }
 }
 
@@ -149,9 +178,9 @@ a {
 }
 
 .texto {
-    float: right;
+    margin-left: 20%;
     position: relative;
-    width: 700px;
+    width: 50%;
     color: #ffAD00;
     background-color: #ffffff05;
     backdrop-filter: blur(80px);
@@ -170,6 +199,7 @@ a {
 
 #fujin {
     position: fixed;
+    margin-right:100px;
     top: 32%;
     left: 7%;
 }
